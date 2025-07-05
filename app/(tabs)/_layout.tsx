@@ -7,9 +7,9 @@ export default function TabsLayout() {
     return (
         <Tabs screenOptions={{tabBarActiveTintColor: "coral"}}>
             <Tabs.Screen
-                name="index"
+                name="home"
                 options={{
-                    title: "index", // You can change this title
+                    title: "Tabs Home", // You can change this title
                     headerTitleAlign: "center",
                     tabBarIcon: ({color, focused}) => {
                         return focused ? (
@@ -23,7 +23,7 @@ export default function TabsLayout() {
             <Tabs.Screen
                 name="login"
                 options={{
-                    title: "Login", // You can change this title
+                    title: "Tabs Login", // You can change this title
                     headerTitleAlign: "center",
                 }}
             />

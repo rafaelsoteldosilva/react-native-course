@@ -1,6 +1,6 @@
+// app/home.tsx
 import {Text, View} from "react-native";
-// app/index.tsx
-export default function Index() {
+export default function Home() {
     return (
         <View
             style={{
@@ -9,7 +9,7 @@ export default function Index() {
                 alignItems: "center",
             }}
         >
-            <Text>This is the main index.tsx</Text>
+            <Text>This is home in tabs</Text>
         </View>
     );
 }

@@ -10,7 +10,7 @@ export default function LoginScreen() {
                 alignItems: "center",
             }}
         >
-            <Text>This is the login screen</Text>
+            <Text>This is login in tabs</Text>
         </View>
     );
 }
