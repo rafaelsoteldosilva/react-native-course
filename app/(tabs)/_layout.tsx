@@ -1,4 +1,6 @@
 // app/_layout.tsx
+import AntDesign from "@expo/vector-icons/AntDesign";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import {Tabs} from "expo-router";
 
 export default function TabsLayout() {
@@ -9,6 +11,13 @@ export default function TabsLayout() {
                 options={{
                     title: "index", // You can change this title
                     headerTitleAlign: "center",
+                    tabBarIcon: ({color, focused}) => {
+                        return focused ? (
+                            <FontAwesome name="home" size={24} color={color} />
+                        ) : (
+                            <AntDesign name="home" size={24} color="black" />
+                        );
+                    },
                 }}
             />
             <Tabs.Screen
